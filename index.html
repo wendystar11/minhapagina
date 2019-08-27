@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+    <!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="C:/Users/tonne/OneDrive/Documentos/site/node_modules/bootstrap/compiler/bootstrap.css">
+	
+		<style type="text/css">
+
+			.nav{
+				min-height: 50px;
+			
+			}
+
+			
+		</style>
+
+    <title>meu site</title>
+  
+	</head>
+	<body>
+		
+		
+		<div class="container-fluid mt-5 pt-5" >
+			
+				
+			<ul class="nav navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-end" 
+				<!--esta barra esta fixada no top SEMPRE e esta em small da cor vermelha e branca o negocio de expandir-->
+				
+				<a href="#" class="navbar-brand"> <img src="img/0.jpg" class="rounded-circle" style="width: 50px;"></a><!-- este seria o logo da navegação com imagem-->
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#abre" > <!-- esse é o botao de expandir quando estiver em small-->
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="abre">
+				
+				<ul class="navbar-nav"> <!-- este seria os links/opções de navegação-->
+				<li class="nav-item"><a href="#" class="nav-link" onclick="refreshPage()">Home</a></li> 
+				
+				<li class="nav-item dropdown"> <!-- item com opção expandidas ao clicar-->
+					<a href="#" class="nav-link dropdown-toggle" 
+							data-toggle="dropdown">Links</a>
+						<div class="dropdown-menu">
+						<a href="https://www.linkedin.com/in/wendy-barbosa/" class="dropdown-item">Linkedin</a>
+						<a href="https://github.com/wendystar11" class="dropdown-item">Github</a>
+						<!--a href="" class="dropdown-item"></a--> 
+						</div>
+						</li>
+						
+						</ul>
+					</div>
+			</ul>
+			<br>
+		
+			<div class="d-flex justify-content-center"> 
+
+			<div class="card" id="cartao"> <!--cartão-->
+				<div class="card-header">
+				<p> Desenvolvedora (São Paulo- SP)</p>
+				<img src="img/px.jpg" width="250">
+				</div>
+				<div class="card-body">
+					<h4 class="card-title">Wendy Barbosa</h3>
+					<h5 class="card-subtitle">22 anos </h6>
+					<p class="card-text">Formada em analise <br> e desenvolvimento de sistemas
+					</p>
+				
+				</div>
+				<div class="card-footer">
+				
+				<a href="#aparece" class="card-link" 
+							data-toggle="collapse" data-parent="#cartao"> Saiba mais</a>
+						</div>
+						
+						<div class="collapse" id="aparece">
+						<p style="font-size: 12px; margin-left: 20px;"> Conhecimento em HTML, CSS, Bootstrap,<br> JAVA, JavaScript, ANGULAR+, PHP,<br> PYTHON, etc..</p>
+						</div>
+
+				
+				</div>
+			
+			
+			</div>
+			
+			</div>
+			
+			
+			</div>	
+		</div>
+		<br>
+		<script>
+	
+		function refreshPage(){
+			window.location.reload();
+		}//recarrega a pagina 
+		</script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="C:/Users/tonne/OneDrive/Documentos/site/node_modules/jquery/dist/jquery.js"></script>
+    <script src="C:/Users/tonne/OneDrive/Documentos/site/node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="C:/Users/tonne/OneDrive/Documentos/site/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+  <footer class="bg-secondary"> 
+		<div style="margin-top: 50px; margin-left: 20px; text-align: left;" >  
+			<br> <h3>Contato</h3> 
+			<h6>Email: wendy@gmail.com <br>
+			 Celular: 11 99999-999 </h6>
+			<br></div>
+  
+  </footer>
+</html>
